@@ -92,7 +92,7 @@
     }
 
     input:checked + .slider {
-        background-color: #28a745;
+        background-color: #ffc0cd;
     }
 
     input:checked + .slider:before {
@@ -123,7 +123,7 @@
     }
 
     /* Đặt kiểu cho nút đăng nhập và liên hệ */
-    #loginButton, #contactButton {
+    #loginButton, #contactButtona,  #contactButtonab{
         padding: 10px 20px;
         background-color: #007bff;
         color: white;
@@ -134,24 +134,24 @@
         margin: 0 5px;
     }
 
-    #loginButton:hover, #contactButton:hover {
+    #loginButton:hover, #contactButtona:hover {
         background-color: #0056b3;
         transform: scale(1.05);
     }
 
-    #loginButton:active, #contactButton:active {
+    #loginButton:active, #contactButtona:active {
         transform: scale(0.95);
     }
 
-    #contactButton {
+    #contactButtona {
         background-color: #0a9233;
     }
 
-    #contactButton:hover {
+    #contactButtona:hover {
         background-color: #007bff;
     }
 
-    #contactButton:active {
+    #contactButtona:active {
         background-color: #0056b3;
     }
 
@@ -317,6 +317,61 @@ font-size: 13px; /* Thay đổi kích thước chữ cho ngày sinh và địa c
         background-color: #0056b3;
         transform: scale(1.05);
     }
+
+    #updateProfile:active {
+        background-color: #004494;
+        transform: scale(0.95);
+    }
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .login-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .login-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .login-container .login-button {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .login-container .getkey-button {
+      background-color: #28a745;
+      color: #fff;
+    }
+
 
     #updateProfile:active {
         background-color: #004494;
